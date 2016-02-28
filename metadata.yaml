@@ -1,0 +1,51 @@
+_repo: Tales-of-the-Punjab-Folklore-of-India_6145
+contributor:
+  commentator:
+    agent_name: Temple, Richard Carnac, Sir
+    alias: Temple, R. C. (Richard Carnac), Sir
+    birthdate: 1850
+    deathdate: 1931
+    gutenberg_agent_id: '41102'
+    url: http://www.gutenberg.org/2009/agents/41102
+creator:
+  author:
+    agent_name: Steel, Flora Annie Webster
+    alias: Steel, F. A. (Flora Annie)
+    birthdate: 1847
+    deathdate: 1929
+    gutenberg_agent_id: '1973'
+    url: http://www.gutenberg.org/2009/agents/1973
+    wikipedia: http://en.wikipedia.org/wiki/Flora_Annie_Steel
+description: ''
+gutenberg_issued: '2004-07-01'
+gutenberg_type: Text
+identifiers:
+  gutenberg: '6145'
+language: en
+publisher: Project Gutenberg
+rights: Public domain in the USA.
+rights_url: http://creativecommons.org/about/pdm
+subjects:
+- !lcsh 'Folklore -- India'
+- !lcsh 'Panjabis (South Asian people) -- Folklore'
+- !lcsh 'Tales -- India -- Punjab'
+- !lcc 'GR'
+tableOfContents: Sir Buzz -- The rat's wedding -- The faithful prince -- The bear's
+  bad bargain -- Prince Lionheart and his three friends -- The Lambikin -- Bopolûchî
+  -- Princess Aubergine -- Valiant Vicky, the brave weaver -- The son of seven mothers
+  -- The sparrow and the crow -- The tiger, the brâhman, and the jackal -- The king
+  of the crocodiles -- Little anklebone -- The close alliance -- The two brothers
+  -- The jackal and the iguana -- The death and burial of poor hen-sparrow -- Princess
+  Pepperina -- Peasie and Beansie -- The jackal and the partridge -- The snake-woman
+  and king Ali Mardan -- The wonderful ring -- The jackal and the pea-hen -- The grain
+  of corn -- The farmer and the money-lender -- The lord of death -- The wrestlers
+  -- The legend of Gwâshbrâri, the glacier-hearted queen -- The barber's clever wife
+  -- The jackal and the crocodile -- How Raja Rasâlu was born -- How Raja Rasâlu went
+  out into the world -- How Raja Rasâlu's friends forsook him -- How Raja Rasâlu killed
+  the giants -- How Raja Rasâlu became a Jôgi -- How Raja Rasâlu journeyed to the
+  city of King Sarkap -- How Raja Rasâlu swung the seventy fair maidens, daughters
+  of the king -- How Raja Rasâlu played chaupur with King Sarkap -- The king who
+  was fried -- Prince Half-a-son -- The mother and daughter who worshipped the sun
+  -- The Ruby Prince.
+title: 'Tales of the Punjab: Folklore of India'
+url: http://www.gutenberg.org/ebooks/6145
