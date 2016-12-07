@@ -1,0 +1,61 @@
+sudo: required
+dist: trusty
+language: ruby
+
+before_install:
+before_install:
+- gem install asciidoctor -v 1.5.2
+- gem install tilt
+- sudo pip install git+https://github.com/gitenberg-dev/gitberg
+- sudo pip install pillow
+- sudo pip install cssutils
+- sudo pip install docutils
+- sudo pip install roman
+- sudo pip install git+https://github.com/gitenberg-dev/pg-epubmaker
+script:
+- VERSION=`ruby -e "require 'yaml'; meta = YAML.load_file('metadata.yaml'); puts meta['_version'];"`
+- git clone https://github.com/gitenberg-dev/asciidoctor-htmlbook.git
+- sudo pip install -r asciidoctor-htmlbook/gitberg-machine/requirements.txt
+
+- /usr/bin/python -c "from gitenberg import travis; travis.build_epub()"
+- ebook-convert book.epub book.mobi
+- xvfb-run ebook-convert book.epub book.pdf
+branches:
+  only:
+  - master
+notifications:
+  webhooks:
+    urls:
+      - https://unglue.it/api/travisci/webhook
+    on_success: always
+    on_failure: never
+    on_start: never
+deploy:
+  skip_cleanup: true
+  provider: releases
+  api_key:
+    secure: NbV++gpvxvsu+oJQpeI6WMPbHqE5qqzlUBi1iDq7ImaxZcQL0y8reTaX+CxhM2O6/KBSkOqFtG4F3YUn0iUCwP+PnYvBIWyaDr8SbqJMub3+uXNSLIGErOCe7wSPd/vDlob5Bsc1n/WT+ev4WpjhU54H2CclsjISWWB2m3rtvzWOERJRhBZSr22Q1QYnRlCD92EJKs9R5eGqG94AL+BSyab+8ccgIx5nmLYTUA4dZZ/7bLfMbO/58sRd+LFZ9xZgtOUjPrcMi1xmLO5jvyzzWW9WfQC/gCtMyVQbtEbLW4vHD7XvUdAXj7ekQVzkH5hgeSXweoG9lDLDgPiEL4DVnGoI8yUWxclskXo12vAu9Ioqik3n+gJnNwACxWWH6VwcYT+8VtEBgrrXVJ7PWwSMIpClDrb9HNIGlFTTVcp2xTuryMOJcvVhLm9Mdnr/8yErD2187E7rGvrsrXUQTY8t8rqkDQRifv8c26Kt3qLZEWtJIoh91h9YMY2w59kVsL6uHRYiUMDGTk7SLgqA3rdiTeawZRHDK4n3Foi3Ql+RUf9anN9McNFmlGD7QGjhh6+28BQi+deLNxme2Slm/ezDx4je8Xh8LlqlKo4UuE1Txx4Yfr5OH6gBLj8wCsy2av1xkezhqvEbAjyY0nDl9DRLYeQ8stWOc0J6emb1y9HuE00=
+  file:
+    - book.epub
+    - book.mobi
+    - book.pdf
+  "on":
+    repo: GITenberg/Tales-of-the-Punjab-Folklore-of-India_6145
+addons:
+  apt:
+    packages:
+    - xsltproc
+    - xvfb
+    - calibre
+    - python-pip
+    - git
+    - python-dev
+    - libjpeg-dev
+    - libpng-dev
+    - libfreetype6
+    - libfreetype6-dev
+    - zlib1g-dev
+    - python-lxml
+    - libxml2-dev
+    - libxslt1-dev
+    - tidy
