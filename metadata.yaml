@@ -1,5 +1,5 @@
 _repo: Tales-of-the-Punjab-Folklore-of-India_6145
-_version: 0.1.0
+_version: 0.2.0
 contributor:
   commentator:
     agent_name: Temple, Richard Carnac, Sir
@@ -8,6 +8,9 @@ contributor:
     deathdate: 1931
     gutenberg_agent_id: '41102'
     url: http://www.gutenberg.org/2009/agents/41102
+covers:
+- cover_type: generated
+  image_path: cover.png
 creator:
   author:
     agent_name: Steel, Flora Annie Webster
@@ -18,6 +21,8 @@ creator:
     url: http://www.gutenberg.org/2009/agents/1973
     wikipedia: http://en.wikipedia.org/wiki/Flora_Annie_Steel
 description: ''
+edition_identifiers:
+  edition_id: http://www.gutenberg.org/ebooks/6145#Tales-of-the-Punjab-Folklore-of-India
 gutenberg_issued: '2004-07-01'
 gutenberg_type: Text
 identifiers:
