@@ -1,5 +1,5 @@
 _repo: Tales-of-the-Punjab-Folklore-of-India_6145
-_version: 0.2.0
+_version: 0.2.1
 contributor:
   commentator:
     agent_name: Temple, Richard Carnac, Sir
@@ -36,6 +36,7 @@ subjects:
 - !lcsh 'Panjabis (South Asian people) -- Folklore'
 - !lcsh 'Tales -- India -- Punjab'
 - !lcc 'GR'
+- GITenberg
 tableOfContents: Sir Buzz -- The rat's wedding -- The faithful prince -- The bear's
   bad bargain -- Prince Lionheart and his three friends -- The Lambikin -- Bopolûchî
   -- Princess Aubergine -- Valiant Vicky, the brave weaver -- The son of seven mothers
